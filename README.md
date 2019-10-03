@@ -4,3 +4,5 @@
 
 This repo contains the code used in the lectures in the first part of the module, 
 where we used Python. 
+
+It will be updated weekly.

@@ -24,4 +24,4 @@ total_marks = mark_1 + mark_2 + mark_3 + mark_4 + mark_5
 average_mark = total_marks / 5
 
 print ()
-print ('Final Mark for ' + name + ' is ' + str (average_mark))
+print ('Final Mark for ' + name + ' is ' + str (average_mark) + '.')

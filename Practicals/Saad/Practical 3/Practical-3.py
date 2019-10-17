@@ -33,13 +33,11 @@ from math import pi
 radius = float (input ('Enter the radius of the circle: '))
 print ('The area is %.2f units.' % (pi * radius * radius))
 
-
 fahrenheit = float (input ('Enter the temp in Fahrenheit: '))
 print ('In Celsius that is %.2fF.' % ((fahrenheit - 32) * 5 / 9 ))
 
 celsius = float (input ('Enter the temp in Celsius: '))
 print ('In Fahrenheit that is %.2fF.' % (celsius * 9/5 + 32))
-
 
 name = input ('Hello, who are you? ')
 print ('Hello, ' + name + '. It is good to meet you.')

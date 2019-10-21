@@ -21,8 +21,8 @@ for reading in range (NUMBER_OF_READINGS):
             print ('Please enter a number.')
 
 average_temp = sum (castle_hill) / NUMBER_OF_READINGS
-max_temp = max (castle_hill)
-min_temp = min (castle_hill)
+max_temp     = max (castle_hill)
+min_temp     = min (castle_hill)
 
 print ('Average Temp: ' + str (average_temp))
 print ('Maximum Temp: ' + str (max_temp))

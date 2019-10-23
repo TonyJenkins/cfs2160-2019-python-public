@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import statistics as sp
 """
     capture and calculate temperature.
     TODO
@@ -26,6 +26,7 @@ try:
     print("max temp is", max)
     print("Min temp is", min)
     print("Avg temp is", round(avg, 2))
+    print(sp.mean(temp_list))
 except ValueError:
     print("Numbers only")
 

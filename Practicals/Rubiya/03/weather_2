@@ -1,1 +1,61 @@
+import statistics as sp
+temperatures = []
+total_readings = 6
+i = 1
+while i <= total_readings:
 
+ #take temperature reading as string, for example: 11c, 11C, 51.8f, 51.8F
+ temp_in_string = input ('Enter Temperature Reading # '+ str(i) + '>>> ')
+
+ if temp_in_string[-1:].lower() == 'f':
+  Celsius = (float(temp_in_string[:-1]) - 32) * 5.0/9.0
+  #add to the temperature list
+  temperatures.append(round(Celsius))
+
+ elif temp_in_string[-1:].lower() == 'c':
+  Celsius = float(temp_in_string[:-1])
+  #add to the temperature list
+  temperatures.append(round (Celsius))
+
+ else:
+  print('Please define temperature format!')
+  break
+ 
+ 
+ #add more temperature reading
+ if i == total_readings:
+  decision = input('Would you like to add another reading? Y/N \n')
+  if decision.lower() == 'y':
+   total_readings += 1
+
+ #increment counter value by 1
+ i += 1
+
+print("All Temperature Readings (Celsius) Are: ", temperatures)
+print("Average Temperature is : ", round(sp.mean(temperatures)), 'C')
+print("Maximum Temperature is : ", max(temperatures), 'C')
+print("Minimum Temperature is : ", min(temperatures), 'C')
+
+#temperatures in Fahrenheit
+temperatures_F = []
+i = 1
+while i <= total_readings:
+ Fahrenheit = 9.0/5.0 * temperatures[i-1] + 32
+ temperatures_F.append(Fahrenheit)
+ 
+ #increment counter value by 1
+ i += 1
+
+print("All Temperature Readings (Fahrenheit) Are: ", temperatures_F)
+print("Average Temperature is : ", round(sp.mean(temperatures_F)), 'F')
+print("Maximum Temperature is : ", max(temperatures_F), 'F')
+print("Minimum Temperature is : ", min(temperatures_F), 'F')
+
+
+
+
+
+
+
+  
+		 
